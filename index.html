@@ -8,10 +8,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- This is just a message -->
+    <div class="text">
+        <p>!!!Use Space after the text in gap. To make your output line by line 💻</p>
+        <span id="exclamation">&excl;</span> 
+    </div>
+
+    <!-- Modal -->
+    <div class="myModal" id="modal">
+        <div class="modal-content">
+            <div class="modal-header"></div>
+                <div class="modal-body">
+                    <span class="close">&times;</span>
+
+                    <img src="modal.png" alt="">
+                    <!-- <h3 style="text-decoration: underline;color: #888;">Here "-" representing space:</h3>
+                    <br>
+                    <p> Demo:--------------------------------------------------------------------------
+                        <br>
+                        Name:-John-Doe--------------------------------------------------------------
+                        <br>
+                        Age:-00-------------------------------------------------------------------------
+                    </p> -->
+                </div>
+            <div class="modal-footer"></div>
+        </div>
+    </div>
+
+    <!-- Qr code generator -->
     <div class="container">
         <div class="box">
             <img src="qrCode.png" alt="" id="qrcode" >
-            <input type="text" placeholder="Enter your data" id="input">
+            <textarea  placeholder="Enter your data" id="input"> </textarea>
             <button id="generate">Generate</button>
             <button id="download">Download</button>
         </div>
